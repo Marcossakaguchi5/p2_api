@@ -21,6 +21,7 @@ public class SecurityConfig {
     @Autowired
     private SecurityFilter securityFilter;
 
+    @SuppressWarnings("removal")
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         return http

@@ -1,0 +1,51 @@
+@url = https://8080-marcossakaguchi5-p2api-h8bufi1l62p.ws-us116.gitpod.io
+
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6Im1hcmNvcyIsImlhdCI6MTUxNjIzOTAyMn0.nMVQAwhRNHJOWx4LCEtAIBZ1dzYAb_9nvZQws0sbRLo
+
+###
+GET {{url}}/colaborador
+Authorization: Bearer {{token}}
+
+###
+GET {{url}}/colaborador/2
+Authorization: Bearer {{token}}
+
+###
+POST {{url}}/colaborador
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "nome": "mendeleu"
+}
+
+###
+POST {{url}}/colaborador
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "nome": "gospin"
+}
+
+###
+POST {{url}}/colaborador
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "nome": "foggaopérel"
+}
+
+###
+PUT {{url}}/colaborador/2
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "nome": "brenfin"
+}
+
+###
+DELETE {{url}}/colaborador/2
+Authorization: Bearer {{token}}
